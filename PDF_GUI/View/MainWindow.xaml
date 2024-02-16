@@ -7,9 +7,9 @@
             <RowDefinition Height="163*"/>
             <RowDefinition Height="153*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="80,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="194" FontSize="24" Text="PDF file converter"/>
-        <Button Content="Convert files" Command="{Binding Path = GoToSingleConvert}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="293" Margin="30,64,0,0" Height="110" FontSize="22" Grid.RowSpan="2"/>
-        <Button Content="Convert folders" Command="{Binding Path = GoToMultipleConvert}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="293" Margin="30,16,0,0" Height="110" FontSize="22" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="78,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="220" FontSize="24" Text="PDF File Converter" FontFamily="Sans-serif" FontWeight="Bold"/>
+        <Button Content="Convert Files" Command="{Binding Path = GoToSingleConvert}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="293" Margin="30,64,0,0" Height="110" FontSize="22" FontWeight="DemiBold" Background="#04AA6D" Foreground="White" Grid.RowSpan="2"/>
+        <Button Content="Convert Folders" Command="{Binding Path = GoToMultipleConvert}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="293" Margin="30,16,0,0" Height="110" FontSize="22"  FontWeight="DemiBold" Background="#04AA6D" Foreground="White" Grid.Row="1" />
         <Menu HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="357">
             <MenuItem Height="25" Width="50" Header="File" >
                 <MenuItem Header="Close application" Height="25" Margin="0,0,-3,0" Command="{Binding Path = CloseApplication}"/>

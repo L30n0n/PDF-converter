@@ -27,14 +27,14 @@ namespace PDF_GUI.PDF_Engine
                     }
                     action.Invoke();
                     _loghandler.WriteToLog(listOfFiles.Length);
-                    MessageBox.Show("Filerne er blevet konverteret!");
+                    MessageBox.Show("File converted successfully!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Programmet fejlede med fejlkode: " + Environment.NewLine + ex);
+                    MessageBox.Show("The program failed with error code: " + Environment.NewLine + ex);
                 }
             }
-            else MessageBox.Show("Både kilde og destination skal være udfyldt!");
+            else MessageBox.Show("Both source and destination/target path must be filled in!!");
         }
 
         public void ConvertFileToPdf(string sourcePath, string targetPath, Action action)
@@ -48,14 +48,14 @@ namespace PDF_GUI.PDF_Engine
                     _pdfConvertHandler.ReturnPdfFilePath(ext.Last(), sourcePath, pathTo);
                     action.Invoke();
                     _loghandler.WriteToLog(1);
-                    MessageBox.Show("Filen er blevet konverteret!");
+                    MessageBox.Show("File converted successfully!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Programmet fejlede med fejlkode: " + Environment.NewLine + ex);
+                    MessageBox.Show("The program failed with error code: " + Environment.NewLine + ex);
                 }
             }
-            else MessageBox.Show("Både kilde og destination skal være udfyldt!");
+            else MessageBox.Show("Both source and destination/target path must be filled in!!");
         }
     }
 }
